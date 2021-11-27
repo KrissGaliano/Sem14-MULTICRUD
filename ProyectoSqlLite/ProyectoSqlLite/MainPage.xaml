@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ProyectoSqlLite"
+             x:Class="ProyectoSqlLite.MainPage">
+
+
+    <StackLayout Margin="18,18,18,18">
+        <StackLayout             
+            BackgroundColor="#0064a1"
+            Padding="5,5,5,5"
+            Margin="0,5,0,5">
+            <Label
+                Text="Menú mascotas"
+                TextColor="White"            
+                FontSize="Medium"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"/>
+        </StackLayout>
+
+        <Frame
+            CornerRadius="18"
+            WidthRequest="340"
+            HeightRequest="170"
+            HorizontalOptions="Start"
+            BackgroundColor="Silver"
+            Margin="10">
+            <Image Source="dogs.jpg" WidthRequest="200" HeightRequest="180"/>
+        </Frame>
+        
+        <StackLayout Orientation="Horizontal" Spacing="6">
+            <Button Text=" + Crear"  FontAttributes="Bold" FontSize="Micro" BackgroundColor="#80d9ff" HorizontalOptions="Start"
+             x:Name="btnnuevo"/>
+            <Image WidthRequest="270"  Source="agregar.jpg"/>
+        </StackLayout>
+
+        <StackLayout  Orientation="Horizontal" Spacing="6">
+            <Image WidthRequest="270"  Source="listar.jpg" HorizontalOptions="Start"/>
+            <Button Text="Mostrar"  FontSize="Micro" FontAttributes="Bold" BackgroundColor="#4ed38a"  
+                x:Name="btnmostrar"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Borrar" x:Name="btneliminar" HorizontalOptions="FillAndExpand" BackgroundColor="#bc424f" TextColor="White"/>
+            <Button Text="Modificar" x:Name="btnmodificar"  HorizontalOptions="FillAndExpand" BackgroundColor="#efcd5c" />
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal" BackgroundColor="#a8efdb">
+            <Label Text="Inserte código de mascota: " FontAttributes="Bold"/>
+            <Entry x:Name="cajacodigo" HorizontalOptions="FillAndExpand"/>
+
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
